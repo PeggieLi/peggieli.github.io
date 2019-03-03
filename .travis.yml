@@ -10,6 +10,7 @@ script:
 
 deploy:
   provider: pages
+  skip-cleanup: true
   local_dir: public
   repo: PeggieLi/paggieli.github.com
   github_token: $GIT
