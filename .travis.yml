@@ -12,7 +12,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   local_dir: public
-  repo: PeggieLi/peggieli.github.com
+  repo: PeggieLi/peggieli.github.io
   github_token: $GIT
   on:
     branch: release
