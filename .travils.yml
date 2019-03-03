@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "10"
+
+before_script: 
+  - npm install -g hexo-cli -g
+
+script:
+  - hexo generate
+
+deploy:
+  provider: pages
+  local_dir: public
+  repo: PeggieLi/paggieli.github.com
+  github_token: $GIT
+  on:
+    branch: release
+  target_branch: master
